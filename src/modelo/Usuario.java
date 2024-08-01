@@ -24,7 +24,7 @@ public class Usuario {
         this.apellido2 = apellido2;
         this.fechaNac = fechaNac;
         this.tipo = tipo;
-        this.contenidoVisualizado = new ArrayList<>(); // Inicializa el ArrayList
+        this.contenidoVisualizado = new ArrayList<>();
     }
 
 	//GETS
