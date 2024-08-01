@@ -16,7 +16,7 @@ public class Main {
 		//System.out.println(f1);
 		//System.out.println(f2);
 
-		Usuario u1 = new Usuario(0, "puta", "perra", "Cristina", "López", "Cabrera", f1, "admin");
+		Usuario u1 = new Usuario(0, "senna", "si", "Cristina", "López", "Cabrera", f1, "admin");
 		System.out.println("El ID de usuario de " + u1.getUserName() + " es " +  u1.getIdUsuario());
 
 	}
