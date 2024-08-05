@@ -24,7 +24,7 @@ public class Usuario {
         this.apellido2 = apellido2;
         this.fechaNac = fechaNac;
         this.tipo = tipo;
-        this.contenidoVisualizado = new ArrayList<>();
+        this.contenidoVisualizado = new ArrayList<Contenido>();
     }
 
 	//GETS
@@ -100,6 +100,10 @@ public class Usuario {
 
 	public void setContenidoVisualizado(ArrayList<Contenido> contenidoVisualizado) {
 		this.contenidoVisualizado = contenidoVisualizado;
+	}
+
+	public void insertarContenido(ArrayList<Contenido> contenido, Contenido contenido_a_insertar){
+			contenido.add(contenido_a_insertar);
 	}
 
 }

@@ -28,7 +28,4 @@ public class Fecha {
 	public String toString() {
 		return  dia + " / " + mes + " / " + anyo ;
 	}
-	
-	
-	
 }

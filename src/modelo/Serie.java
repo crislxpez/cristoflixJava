@@ -1,5 +1,7 @@
 package modelo;
 
+import java.util.ArrayList;
+
 public class Serie extends Contenido {
 	
 	private int numCaps;
@@ -19,4 +21,7 @@ public class Serie extends Contenido {
 		this.numCaps = numCaps;
 	}
 
+	public void insertarContenido(ArrayList<Serie> serie, Serie serie_a_insertar){
+			serie.add(serie_a_insertar);
+	}
 }

@@ -1,5 +1,7 @@
 package modelo;
 
+import java.util.ArrayList;
+
 public class Documental extends Contenido{
 
 	private String tipo;
@@ -18,6 +20,10 @@ public class Documental extends Contenido{
 
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
+	}
+
+	public void insertarContenido(ArrayList<Documental> documental, Documental documental_a_insertar){
+			documental.add(documental_a_insertar);
 	}
 
 }

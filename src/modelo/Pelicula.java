@@ -1,5 +1,7 @@
 package modelo;
 
+import java.util.ArrayList;
+
 public class Pelicula extends Contenido {
 
 	private String director;
@@ -18,6 +20,10 @@ public class Pelicula extends Contenido {
 
 	public void setDirector(String director) {
 		this.director = director;
+	}
+
+	public void insertarContenido(ArrayList<Pelicula> pelicula, Pelicula pelicula_a_insertar){
+			pelicula.add(pelicula_a_insertar);
 	}
 
 }
