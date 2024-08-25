@@ -12,6 +12,7 @@ public class Usuario {
     private String apellido2;
     private Fecha fechaNac;
     private String tipo;
+	private boolean estado;
     private ArrayList<Contenido> contenidoVisualizado;
 
     public Usuario(int idUsuario, String userName, String contrasenia, String nombre, String apellido1, String apellido2, Fecha fechaNac, String tipo) {
@@ -104,6 +105,19 @@ public class Usuario {
 
 	public void insertarContenido(ArrayList<Contenido> contenido, Contenido contenido_a_insertar){
 			contenido.add(contenido_a_insertar);
+	}
+
+	public void setDatosUsuario(int id, String userName, String contrasenia, String nombre, String apellido1, String apellido2, Fecha fecha_nac, String tipo, boolean activo){
+
+		this.setIdUsuario(id);(id);
+		this.setUserName(userName);
+		this.setContrasenia(contrasenia);
+		this.setNombre(nombre);
+		this.setApellido1(apellido1);
+		this.setApellido2(apellido2);
+		this.setFechaNac(fecha_nac);
+		this.setTipo(tipo);
+		this.setEstado(activo);
 	}
 
 }

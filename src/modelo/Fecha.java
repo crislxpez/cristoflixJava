@@ -24,6 +24,13 @@ public class Fecha {
 	public void setAnyo(int anyo) {
 		this.anyo = anyo;
 	}
+
+	public void setFecha(int dia, int mes, int anyo){
+		this.setDia(dia);
+		this.setMes(mes);
+		this.setAnyo(anyo);
+	}
+	
 	@Override
 	public String toString() {
 		return  dia + " / " + mes + " / " + anyo ;
