@@ -7,9 +7,9 @@ public class Serie extends Contenido {
 	private int numCaps;
 
 	public Serie(int idContenido, String titulo, Fecha fechaLanzamiento,
-			int duracion, String genero, float imbdRating, float imbdVotes, int numCaps) {
+			int duracion, String genero, float imbdRating, float imbdVotes, int timesPlayed, int timesLiked, int timesNotLiked, float cristoflixRating, int numCaps) {
 		super( idContenido, titulo, fechaLanzamiento,
-				 duracion, genero, imbdRating, imbdVotes); 
+				 duracion, genero, imbdRating, imbdVotes, timesPlayed, timesLiked, timesNotLiked, cristoflixRating); 
 		this.numCaps = numCaps;
 	}
 

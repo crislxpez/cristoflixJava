@@ -13,9 +13,14 @@ public class Usuario {
     private Fecha fechaNac;
     private String tipo;
 	private boolean estado;
-    private ArrayList<Contenido> contenidoVisualizado;
+    private ArrayList<Contenido> v_contenido_visualizado;
+    private ArrayList<Contenido> v_contenido_mg;
+    private ArrayList<Contenido> v_contenido_nomg;
+    private ArrayList<Contenido> v_contenido_buscado;
 
-    public Usuario(int idUsuario, String userName, String contrasenia, String nombre, String apellido1, String apellido2, Fecha fechaNac, String tipo) {
+
+
+    public Usuario(int idUsuario, String userName, String contrasenia, String nombre, String apellido1, String apellido2, Fecha fechaNac, String tipo, boolean estado) {
 
         this.idUsuario = idUsuario;
         this.userName = userName;
@@ -25,7 +30,11 @@ public class Usuario {
         this.apellido2 = apellido2;
         this.fechaNac = fechaNac;
         this.tipo = tipo;
-        this.contenidoVisualizado = new ArrayList<Contenido>();
+        this.v_contenido_visualizado = new ArrayList<Contenido>();
+        this.v_contenido_mg = new ArrayList<Contenido>();
+        this.v_contenido_nomg = new ArrayList<Contenido>();
+        this.v_contenido_buscado = new ArrayList<Contenido>();
+
     }
 
 	//GETS
@@ -95,12 +104,21 @@ public class Usuario {
 		this.tipo = tipo;
 	}
 
-	public ArrayList<Contenido> getContenidoVisualizado() {
-		return contenidoVisualizado;
+	public void setEstado(boolean estado) {
+		this.estado = estado;
 	}
 
-	public void setContenidoVisualizado(ArrayList<Contenido> contenidoVisualizado) {
-		this.contenidoVisualizado = contenidoVisualizado;
+	public Contenido getContenidoVisualizado(int i) {
+		return this.v_contenido_visualizado.get(i);
+	}
+	public Contenido getContenidoMg(int i) {
+		return this.v_contenido_mg.get(i);
+	}
+	public Contenido getContenidoNomg(int i) {
+		return this.v_contenido_nomg.get(i);
+	}
+	public Contenido getContenidoBuscado(int i) {
+		return this.v_contenido_buscado.get(i);
 	}
 
 	public void insertarContenido(ArrayList<Contenido> contenido, Contenido contenido_a_insertar){
@@ -109,7 +127,7 @@ public class Usuario {
 
 	public void setDatosUsuario(int id, String userName, String contrasenia, String nombre, String apellido1, String apellido2, Fecha fecha_nac, String tipo, boolean activo){
 
-		this.setIdUsuario(id);(id);
+		this.setIdUsuario(id);
 		this.setUserName(userName);
 		this.setContrasenia(contrasenia);
 		this.setNombre(nombre);

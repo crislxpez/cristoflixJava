@@ -8,7 +8,7 @@ public class Contenido {
 	protected int duracion;
 	protected String genero;
 	protected float imbdRating;
-	protected int imbdVotes;
+	protected float imbdVotes;
 	protected int timesPlayed;
 	protected int timesLiked;
 	protected int timesNotLiked;
@@ -63,11 +63,11 @@ public class Contenido {
 		this.imbdRating = imbdRating;
 	}
 
-	public int getImbdVotes() {
+	public float getImbdVotes() {
 		return this.imbdVotes;
 	}
 
-	public void setImbdVotes(int imbdVotes) {
+	public void setImbdVotes(float imbdVotes) {
 		this.imbdVotes = imbdVotes;
 	}
 
@@ -113,9 +113,20 @@ public class Contenido {
 
 	
 	public Contenido(int idContenido, String titulo, Fecha fecha_lanzamiento,
-			int duracion, String genero, float imbdRating, float imbdVotes) {
+			int duracion, String genero, float imbdRating, float imbdVotes, int timesPlayed, int timesLiked, int timesNotLiked, float cristoflixRating) {
 		
-		
+		this.idContenido = idContenido;
+		this.titulo = titulo;
+		this.fechaLanzamiento = fecha_lanzamiento;
+		this.duracion = duracion;
+		this.genero = genero;
+		this.imbdRating = imbdRating;
+		this.imbdVotes = imbdVotes;
+		this.timesPlayed = timesPlayed;
+		this.timesLiked = timesLiked;
+		this.timesNotLiked = timesNotLiked;
+		this.cristoflixRating = cristoflixRating;
+
 	}
 }
 

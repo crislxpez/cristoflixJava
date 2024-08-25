@@ -7,9 +7,8 @@ public class Pelicula extends Contenido {
 	private String director;
 
 	public Pelicula(int idContenido, String titulo, Fecha fecha_lanzamiento,
-			int duracion, String genero, float imbdRating, float imbdVotes, String director) {
-		super(idContenido, titulo, fecha_lanzamiento,
-				 duracion, genero, imbdRating, imbdVotes); 
+		int duracion, String genero, float imbdRating, float imbdVotes, int timesPlayed, int timesLiked, int timesNotLiked, float cristoflixRating, String director) {
+		super(idContenido, titulo, fecha_lanzamiento, duracion, genero, imbdRating, imbdVotes, timesPlayed, timesLiked, timesNotLiked, cristoflixRating); 
 		
 		this.director = director;
 	}

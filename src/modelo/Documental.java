@@ -7,9 +7,9 @@ public class Documental extends Contenido{
 	private String tipo;
 
 	public Documental(int idContenido, String titulo, Fecha fecha_lanzamiento,
-			int duracion, String genero, float imbdRating, float imbdVotes, String tipo) {
+			int duracion, String genero, float imbdRating, float imbdVotes,int timesPlayed, int timesLiked, int timesNotLiked, float cristoflixRating, String tipo) {
 		super(idContenido, titulo, fecha_lanzamiento,
-				 duracion, genero, imbdRating, imbdVotes); 
+				 duracion, genero, imbdRating, imbdVotes, timesPlayed, timesLiked, timesNotLiked, cristoflixRating); 
 		
 		this.tipo = tipo;
 	}

@@ -124,6 +124,9 @@ public class Sistema {
 	}
 
 	private void insertarContenido(Contenido c){
+		if (c instanceof Pelicula) {
+			
+		}
 
 	}
     private void cargarDatosBasicos(){
@@ -132,12 +135,11 @@ public class Sistema {
 		this.setLastUserId(0);
 		this.setLastContentId(0);
 	
-		Fecha fecha;
-	
+		Fecha fecha = new Fecha();
 	
 		fecha.setFecha(19, 10, 2014);
 	
-		this.insertarContenido(new Pelicula (0, "El corredor del laberinto", fecha, 113, "Ciencia Ficción", 6.8, 511000, 0, 0, 0, 0, "Wes Ball", false));
+		this.insertarContenido(new Pelicula (0, "El corredor del laberinto", fecha, 113, "Ciencia Ficción", 6.8, 511000f, 0, 0, 0, 0, "Wes Ball"));
 	
 		fecha.setFecha(31, 06, 1999);
 	
