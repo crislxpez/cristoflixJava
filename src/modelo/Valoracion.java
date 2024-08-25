@@ -6,9 +6,19 @@ public class Valoracion {
     private Contenido contenido;
     private Usuario usuario;
     private int segundosVisualizados;
-    private float estrellas;
+    private double estrellas;
     private Fecha fechaValoracion;
-    private boolean debug;
+
+    public Valoracion(int idValoracion, Contenido contenido, Usuario usuario, double estrellas, int segundosVisualizados, Fecha fechaValoracion){
+        
+        this.idValoracion = idValoracion;
+        this.contenido = contenido;
+        this.usuario = usuario;
+        this.segundosVisualizados = segundosVisualizados;
+        this.estrellas = estrellas;
+        this.fechaValoracion = fechaValoracion;
+        
+    }
 
     public int getIdValoracion() {
         return idValoracion;
@@ -34,10 +44,10 @@ public class Valoracion {
     public void setSegundosVisualizados(int segundosVisualizados) {
         this.segundosVisualizados = segundosVisualizados;
     }
-    public float getEstrellas() {
+    public double getEstrellas() {
         return estrellas;
     }
-    public void setEstrellas(float estrellas) {
+    public void setEstrellas(double estrellas) {
         this.estrellas = estrellas;
     }
     public Fecha getFechaValoracion() {
@@ -45,12 +55,6 @@ public class Valoracion {
     }
     public void setFechaValoracion(Fecha fechaValoracion) {
         this.fechaValoracion = fechaValoracion;
-    }
-    public boolean isDebug() {
-        return debug;
-    }
-    public void setDebug(boolean debug) {
-        this.debug = debug;
     }
 
 }

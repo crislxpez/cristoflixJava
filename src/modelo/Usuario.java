@@ -17,8 +17,13 @@ public class Usuario {
     private ArrayList<Contenido> v_contenido_mg;
     private ArrayList<Contenido> v_contenido_nomg;
     private ArrayList<Contenido> v_contenido_buscado;
+    private ArrayList<Contenido> v_contenido_valorado;
 
 
+
+	public Usuario(){
+
+	}
 
     public Usuario(int idUsuario, String userName, String contrasenia, String nombre, String apellido1, String apellido2, Fecha fechaNac, String tipo, boolean estado) {
 
@@ -30,10 +35,13 @@ public class Usuario {
         this.apellido2 = apellido2;
         this.fechaNac = fechaNac;
         this.tipo = tipo;
+		this.estado = estado;
         this.v_contenido_visualizado = new ArrayList<Contenido>();
         this.v_contenido_mg = new ArrayList<Contenido>();
         this.v_contenido_nomg = new ArrayList<Contenido>();
         this.v_contenido_buscado = new ArrayList<Contenido>();
+        this.v_contenido_valorado = new ArrayList<Contenido>();
+
 
     }
 
@@ -121,8 +129,28 @@ public class Usuario {
 		return this.v_contenido_buscado.get(i);
 	}
 
+	public Contenido getContenidoValorado(int i) {
+		return this.v_contenido_valorado.get(i);
+	}
+
 	public void insertarContenido(ArrayList<Contenido> contenido, Contenido contenido_a_insertar){
 			contenido.add(contenido_a_insertar);
+	}
+
+	public ArrayList<Contenido> getVContenidoVisualizado(){
+		return this.v_contenido_visualizado;
+	}
+	public ArrayList<Contenido> getVContenidoMg(){
+		return this.v_contenido_mg;
+	}
+	public ArrayList<Contenido> getVContenidoNomg(){
+		return this.v_contenido_nomg;
+	}
+	public ArrayList<Contenido> getVContenidoBuscado(){
+		return this.v_contenido_buscado;
+	}
+	public ArrayList<Contenido> getVContenidoValorado(){
+		return this.v_contenido_valorado;
 	}
 
 	public void setDatosUsuario(int id, String userName, String contrasenia, String nombre, String apellido1, String apellido2, Fecha fecha_nac, String tipo, boolean activo){

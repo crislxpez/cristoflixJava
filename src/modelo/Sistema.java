@@ -124,9 +124,12 @@ public class Sistema {
 	}
 
 	private void insertarContenido(Contenido c){
-		if (c instanceof Pelicula) {
-			
-		}
+
+	}
+	private void insertarUsuario(Usuario u){
+
+	}
+	private void insertarValoracion(Valoracion v){
 
 	}
     private void cargarDatosBasicos(){
@@ -181,278 +184,371 @@ public class Sistema {
 	
 		this.insertarContenido(new Documental (10, "La vida en nuestro planeta", fecha, 432, "Naturaleza", 8.1, 5600, 0, 0, 0, 0, "Historia"));
 	
-		Usuario u = new Usuario;
+		Usuario u = new Usuario();
 	
 		fecha.setFecha(14, 8, 1999);
 	
 		u.setDatosUsuario(0, "night-man", "jdfs", "Jose David", "Sanchez", "Fernandez", fecha, "cliente", true);
 	
-		u.insertarContenidoVisualizado(this.getContenido(5));
-		u.insertarContenidoVisualizado(this.getContenido(3));
-		u.insertarContenidoVisualizado(this.getContenido(1));
-		u.insertarContenidoVisualizado(this.getContenido(10));
+		u.insertarContenido(u.getVContenidoVisualizado(),this.getContenidoSistema(5));
+		u.insertarContenido(u.getVContenidoVisualizado(),this.getContenidoSistema(3));
+		u.insertarContenido(u.getVContenidoVisualizado(),this.getContenidoSistema(1));
+		u.insertarContenido(u.getVContenidoVisualizado(),this.getContenidoSistema(10));
 	
-		u.insertarContenidoMG(this.getContenido(3));
-		u.insertarContenidoMG(this.getContenido(5));
+		u.insertarContenido(u.getVContenidoMg(), this.getContenidoSistema(3));
+		u.insertarContenido(u.getVContenidoMg(), this.getContenidoSistema(5));
 	
-		u.insertarContenidoNomg(this.getContenido(7));
+		u.insertarContenido(u.getVContenidoNomg(), this.getContenidoSistema(7));
 	
-		u.insertarContenidoValorado(this.getContenido(3));
-		u.insertarContenidoValorado(this.getContenido(5));
-		u.insertarContenidoValorado(this.getContenido(1));
-		u.insertarContenidoValorado(this.getContenido(10));
+		u.insertarContenido(u.getVContenidoValorado(), this.getContenidoSistema(3));
+		u.insertarContenido(u.getVContenidoValorado(), this.getContenidoSistema(5));
+		u.insertarContenido(u.getVContenidoValorado(), this.getContenidoSistema(1));
+		u.insertarContenido(u.getVContenidoValorado(), this.getContenidoSistema(10));
 	
-		this.insertarUsuariosSistema(u);
+		this.insertarUsuario(u);
 	
-		u = new Usuario;
+		u = new Usuario();
 	
 		fecha.setFecha(10, 06, 2004);
 	
 		u.setDatosUsuario(1, "ice-man", "gatogordo", "Pablo", "Guardia", "Castro", fecha, "admin", true);
 	
-		u.insertarContenidoVisualizado(this.getContenido(6));
+		u.insertarContenido(u.getVContenidoVisualizado(),this.getContenidoSistema(6));
 	
-		u.insertarContenidoMG(this.getContenido(6));
+		u.insertarContenido(u.getVContenidoMg(), this.getContenidoSistema(6));
 	
-		u.insertarContenidoValorado(this.getContenido(6));
+		u.insertarContenido(u.getVContenidoValorado(), this.getContenidoSistema(6));
 	
-		this.insertarUsuariosSistema(u);
+		this.insertarUsuario(u);
 	
 	
-		u = new Usuario;
+		u = new Usuario();
 	
 		fecha.setFecha(29, 10, 2001);
 	
 		u.setDatosUsuario(2, "dfpm", "halaMadrid10", "David Francesc", "Pons", "Moll", fecha, "cliente", true);
 	
-		u.insertarContenidoVisualizado(this.getContenido(5));
+		u.insertarContenido(u.getVContenidoVisualizado(),this.getContenidoSistema(5));
 	
-		u.insertarContenidoMG(this.getContenido(5));
+		u.insertarContenido(u.getVContenidoMg(), this.getContenidoSistema(5));
 	
-		u.insertarContenidoNomg(this.getContenido(7));
-		u.insertarContenidoNomg(this.getContenido(2));
+		u.insertarContenido(u.getVContenidoNomg(), this.getContenidoSistema(7));
+		u.insertarContenido(u.getVContenidoNomg(), this.getContenidoSistema(2));
 	
-		u.insertarContenidoValorado(this.getContenido(5)); 
+		u.insertarContenido(u.getVContenidoValorado(), this.getContenidoSistema(5)); 
 	
-		this.insertarUsuariosSistema(u);
+		this.insertarUsuario(u);
 	
 	
-		u = new Usuario;
+		u = new Usuario();
 	
 		fecha.setFecha(24, 03, 2004);
 	
 		u.setDatosUsuario(3, "sergio24m", "242424", "Sergio", "Contreras", "Lucas", fecha, "cliente", true);
 	
-		u.insertarContenidoVisualizado(this.getContenido(2));
+		u.insertarContenido(u.getVContenidoVisualizado(),this.getContenidoSistema(2));
 	
-		u.insertarContenidoMG(this.getContenido(2));
+		u.insertarContenido(u.getVContenidoMg(), this.getContenidoSistema(2));
 	
-		u.insertarContenidoValorado(this.getContenido(2));
+		u.insertarContenido(u.getVContenidoValorado(), this.getContenidoSistema(2));
 	
-		this.insertarUsuarioSistema(u);
+		this.insertarUsuario(u);
 	
 	
-		u = new Usuario;
+		u = new Usuario();
 	
 		fecha.setFecha(28, 12, 2000);
 	
 		u.setDatosUsuario(4, "polgs", "ms10", "Henry Paul", "Garcia", "Simbaña", fecha, "cliente", true);
 	
-		u.insertarContenidoVisualizado(this.getContenido(5));
+		u.insertarContenido(u.getVContenidoVisualizado(),this.getContenidoSistema(5));
 	
-		u.insertarContenidoMG(this.getContenido(5));
+		u.insertarContenido(u.getVContenidoMg(), this.getContenidoSistema(5));
 	
-		u.insertarContenidoNomg(this.getContenido(7));
-		u.insertarContenidoNomg(this.getContenido(2));
+		u.insertarContenido(u.getVContenidoNomg(), this.getContenidoSistema(7));
+		u.insertarContenido(u.getVContenidoNomg(), this.getContenidoSistema(2));
 	
-		u.insertarContenidoValorado(this.getContenido(5)); 
+		u.insertarContenido(u.getVContenidoValorado(), this.getContenidoSistema(5)); 
 	
-		this.insertarUsuariosSistema(u);
+		this.insertarUsuario(u);
 	
 	
-		u = new Usuario;
+		u = new Usuario();
 	
 		fecha.setFecha(05, 07, 2000);
 	
 		u.setDatosUsuario(5, "AntMan", "aguakate9", "Antonio Manuel", "Velasco", "Rivera", fecha, "cliente", true);
 	
-		u.insertarContenidoVisualizado(this.getContenido(1));
+		u.insertarContenido(u.getVContenidoVisualizado(),this.getContenidoSistema(1));
 	
-		u.insertarContenidoValorado(this.getContenido(1));
+		u.insertarContenido(u.getVContenidoValorado(), this.getContenidoSistema(1));
 	
-		this.insertarUsuariosSistema(u);
+		this.insertarUsuario(u);
 	
 	
-		u = new Usuario;
+		u = new Usuario();
 	
 		fecha.setFecha(14, 02, 2004);
 	
 		u.setDatosUsuario(6, "alexmrdgz", "q7r8m5", "Alejandro", "Miranda", "Rodriguez", fecha, "cliente", true);
 	
-		u.insertarContenidoVisualizado(this.getContenido(0));
+		u.insertarContenido(u.getVContenidoVisualizado(),this.getContenidoSistema(0));
 	
-		u.insertarContenidoMG(this.getContenido(7));
+		u.insertarContenido(u.getVContenidoMg(), this.getContenidoSistema(7));
 	
-		u.insertarContenidoValorado(this.getContenido(0));
+		u.insertarContenido(u.getVContenidoValorado(), this.getContenidoSistema(0));
 	
-		this.insertarUsuariosSistema(u);
+		this.insertarUsuario(u);
 	
 	
 	
-		u = new Usuario;
+		u = new Usuario();
 	
 		fecha.setFecha(12, 11, 2003);
 	
 		u.setDatosUsuario(7, "llamassl", "7654", "Luis", "Llamas", "Ramon", fecha, "cliente", true);
 	
-		u.insertarContenidoVisualizado(this.getContenido(5));
+		u.insertarContenido(u.getVContenidoVisualizado(),this.getContenidoSistema(5));
 	
-		u.insertarContenidoMG(this.getContenido(5));
+		u.insertarContenido(u.getVContenidoMg(), this.getContenidoSistema(5));
 	
-		u.insertarContenidoValorado(this.getContenido(5));
+		u.insertarContenido(u.getVContenidoValorado(), this.getContenidoSistema(5));
 	
-		this.insertarUsuariosSistema(u);
+		this.insertarUsuario(u);
 	
 	
 	
-		u = new Usuario;
+		u = new Usuario();
 	
 		fecha.setFecha(20, 04, 2004);
 	
 		u.setDatosUsuario(8, "game-master", "toilette", "Carlos", "Polo", "Martin", fecha, "cliente", true);
 	
-		u.insertarContenidoVisualizado(this.getContenido(5));
-		u.insertarContenidoVisualizado(this.getContenido(1));
-		u.insertarContenidoVisualizado(this.getContenido(9));
+		u.insertarContenido(u.getVContenidoVisualizado(),this.getContenidoSistema(5));
+		u.insertarContenido(u.getVContenidoVisualizado(),this.getContenidoSistema(1));
+		u.insertarContenido(u.getVContenidoVisualizado(),this.getContenidoSistema(9));
 	
-		u.insertarContenidoMG(this.getContenido(9));
-		u.insertarContenidoMG(this.getContenido(5));
+		u.insertarContenido(u.getVContenidoMg(), this.getContenidoSistema(9));
+		u.insertarContenido(u.getVContenidoMg(), this.getContenidoSistema(5));
 	
-		u.insertarContenidoNomg(this.getContenido(1));
+		u.insertarContenido(u.getVContenidoNomg(), this.getContenidoSistema(1));
 	
-		u.insertarContenidoValorado(this.getContenido(5));
-		u.insertarContenidoValorado(this.getContenido(1));
-		u.insertarContenidoValorado(this.getContenido(9));
+		u.insertarContenido(u.getVContenidoValorado(), this.getContenidoSistema(5));
+		u.insertarContenido(u.getVContenidoValorado(), this.getContenidoSistema(1));
+		u.insertarContenido(u.getVContenidoValorado(), this.getContenidoSistema(9));
 	
-		this.insertarUsuariosSistema(u);
+		this.insertarUsuario(u);
 	
 	
 	
-		u = new Usuario;
+		u = new Usuario();
 	
 		fecha.setFecha(21, 9, 2004);
 	
 		u.setDatosUsuario(9, "AlexMrtnzz21", "q100", "Alejandro", "Martinez", "Suarez", fecha, "cliente", true);
 	
-		u.insertarContenidoVisualizado(this.getContenido(9));
-		u.insertarContenidoVisualizado(this.getContenido(7));
-		u.insertarContenidoVisualizado(this.getContenido(2));
+		u.insertarContenido(u.getVContenidoVisualizado(),this.getContenidoSistema(9));
+		u.insertarContenido(u.getVContenidoVisualizado(),this.getContenidoSistema(7));
+		u.insertarContenido(u.getVContenidoVisualizado(),this.getContenidoSistema(2));
 	
-		u.insertarContenidoValorado(this.getContenido(9));
-		u.insertarContenidoValorado(this.getContenido(7));
-		u.insertarContenidoValorado(this.getContenido(2));
+		u.insertarContenido(u.getVContenidoValorado(), this.getContenidoSistema(9));
+		u.insertarContenido(u.getVContenidoValorado(), this.getContenidoSistema(7));
+		u.insertarContenido(u.getVContenidoValorado(), this.getContenidoSistema(2));
 	
-		this.insertarUsuariosSistema(u);
+		this.insertarUsuario(u);
 	
 	
 	
-		u = new Usuario;
+		u = new Usuario();
 	
 		fecha.setFecha(16, 03, 2004);
 	
 		u.setDatosUsuario(10, "AuraEqualizer", "Lupotia1600", "Maria", "Garrido", "Castellano", fecha, "cliente", true);
 	
-		u.insertarContenidoVisualizado(this.getContenido(4));
+		u.insertarContenido(u.getVContenidoVisualizado(),this.getContenidoSistema(4));
 	
-		u.insertarContenidoMG(this.getContenido(4));
+		u.insertarContenido(u.getVContenidoMg(), this.getContenidoSistema(4));
 	
-		u.insertarContenidoNomg(this.getContenido(10));
+		u.insertarContenido(u.getVContenidoNomg(), this.getContenidoSistema(10));
 	
-		u.insertarContenidoValorado(this.getContenido(4));
+		u.insertarContenido(u.getVContenidoValorado(), this.getContenidoSistema(4));
 	
-		this.insertarUsuariosSistema(u);
+		this.insertarUsuario(u);
 	
 	
 	
-		u = new Usuario;
+		u = new Usuario();
 	
 		fecha.setFecha(21, 02, 1991);
 	
 		u.setDatosUsuario(11, "teffuka", "1234", "Natalia", "Serrantes", "Cortez", fecha, "cliente", true);
 	
-		u.insertarContenidoVisualizado(this.getContenido(9));
+		u.insertarContenido(u.getVContenidoVisualizado(),this.getContenidoSistema(9));
 	
-		u.insertarContenidoNomg(this.getContenido(7));
+		u.insertarContenido(u.getVContenidoNomg(), this.getContenidoSistema(7));
 	
-		u.insertarContenidoValorado(this.getContenido(9));
+		u.insertarContenido(u.getVContenidoValorado(), this.getContenidoSistema(9));
 	
-		this.insertarUsuariosSistema(u);
+		this.insertarUsuario(u);
 	
 	
-		u = new Usuario;
+		u = new Usuario();
 	
 		fecha.setFecha(16, 10, 2005);
 	
 		u.setDatosUsuario(12, "madridistashdp", "culeshastalamuerte", "Gonzalo", "Bouso", "Gomez", fecha, "cliente", true);
 	
-		u.insertarContenidoVisualizado(this.getContenido(0));
+		u.insertarContenido(u.getVContenidoVisualizado(),this.getContenidoSistema(0));
 	
-		u.insertarContenidoMG(this.getContenido(9));
-		u.insertarContenidoMG(this.getContenido(5));
+		u.insertarContenido(u.getVContenidoMg(), this.getContenidoSistema(9));
+		u.insertarContenido(u.getVContenidoMg(), this.getContenidoSistema(5));
 	
-		u.insertarContenidoValorado(this.getContenido(0));
+		u.insertarContenido(u.getVContenidoValorado(), this.getContenidoSistema(0));
 	
-		this.insertarUsuariosSistema(u);
+		this.insertarUsuario(u);
 	
 	
-		u = new Usuario;
+		u = new Usuario();
 	
 		fecha.setFecha(19, 12, 2001);
 	
 		u.setDatosUsuario(13, "kxnxdx", "gojou", "Cristina", "Lopez", "Cabrera", fecha, "cliente", true); 
 	
-		u.insertarContenidoVisualizado(this.getContenido(5));
+		u.insertarContenido(u.getVContenidoVisualizado(),this.getContenidoSistema(5));
 	
-		u.insertarContenidoMG(this.getContenido(1));
-		u.insertarContenidoMG(this.getContenido(5));
+		u.insertarContenido(u.getVContenidoMg(), this.getContenidoSistema(1));
+		u.insertarContenido(u.getVContenidoMg(), this.getContenidoSistema(5));
 	
-		u.insertarContenidoNomg(this.getContenido(9));
-		u.insertarContenidoNomg(this.getContenido(7));
+		u.insertarContenido(u.getVContenidoNomg(), this.getContenidoSistema(9));
+		u.insertarContenido(u.getVContenidoNomg(), this.getContenidoSistema(7));
 	
-		u.insertarContenidoValorado(this.getContenido(5)); 
+		u.insertarContenido(u.getVContenidoValorado(), this.getContenidoSistema(5)); 
 	
-		this.insertarUsuariosSistema(u);
+		this.insertarUsuario(u);
 	
 	
-		u = new Usuario;
+		u = new Usuario();
 	
 		fecha.setFecha(22, 11, 1999);
 	
 		u.setDatosUsuario(14, "Napoleon", "221199", "Hanok", "Martin", "Exposito", fecha, "cliente", true);
 	
-		u.insertarContenidoVisualizado(this.getContenido(1));
+		u.insertarContenido(u.getVContenidoVisualizado(),this.getContenidoSistema(1));
 	
-		u.insertarContenidoMG(this.getContenido(1));
+		u.insertarContenido(u.getVContenidoMg(), this.getContenidoSistema(1));
 	
-		u.insertarContenidoNomg(this.getContenido(9));
-		u.insertarContenidoNomg(this.getContenido(4));
+		u.insertarContenido(u.getVContenidoNomg(), this.getContenidoSistema(9));
+		u.insertarContenido(u.getVContenidoNomg(), this.getContenidoSistema(4));
 	
-		u.insertarContenidoValorado(this.getContenido(1)); 
+		u.insertarContenido(u.getVContenidoValorado(), this.getContenidoSistema(1)); 
 	
-		this.insertarUsuariosSistema(u);
-	
-		
-	
+		this.insertarUsuario(u);
 	
 		fecha.setFecha(07, 06, 2021);
 	
-		Valoracion v0(0, this.getContenido(3), this.getUsuarioSistema(0), 4.5, 2275, fecha);
-		this.insertarValoracionesSistema(v0);
+		Valoracion v0 = new Valoracion(0, this.getContenidoSistema(3), this.getUsuarioSistema(0), 4.5, 2275, fecha);
+		this.insertarValoracion(v0);
 	
 		fecha.setFecha(21, 03, 2023);
 	
-		Valoracion v1(1, this.getContenido(5), this.getUsuarioSistema(0), 5, 2341, fecha);
-		this.insertarValoracionesSistema(v1);
+		Valoracion v1 = new Valoracion(1, this.getContenidoSistema(5), this.getUsuarioSistema(0), 5, 2341, fecha);
+		this.insertarValoracion(v1);
+
+		fecha.setFecha(21, 5, 2024);
+
+		Valoracion v3 = new Valoracion(3, this.getContenidoSistema(10), this.getUsuarioSistema(0), 3.5, 1232, fecha);
+		this.insertarValoracion(v3);
+
+		fecha.setFecha(02, 12, 2020);
+
+		Valoracion v4 = new Valoracion(4, this.getContenidoSistema(6), this.getUsuarioSistema(1), 4.5, 500, fecha);
+		this.insertarValoracion(v4);
+
+
+		fecha.setFecha(3, 12, 2020);
+
+		Valoracion v5 = new Valoracion(5, this.getContenidoSistema(5), this.getUsuarioSistema(2), 4.5, 1200, fecha);
+		this.insertarValoracion(v5);
+
+
+		fecha.setFecha(04, 5, 2020);
+
+		Valoracion v6 = new Valoracion(6, this.getContenidoSistema(2), this.getUsuarioSistema(3), 4.5, 1200, fecha);
+		this.insertarValoracion(v6);
+
+		fecha.setFecha(4, 11, 2021);
+
+		Valoracion v7 = new Valoracion(7, this.getContenidoSistema(5), this.getUsuarioSistema(4), 4, 144000, fecha);
+		this.insertarValoracion(v7);
+
+		fecha.setFecha(5, 2, 2024);
+
+		Valoracion v8 = new Valoracion(8, this.getContenidoSistema(1), this.getUsuarioSistema(5), 4, 136, fecha);
+		this.insertarValoracion(v8);
+
+		fecha.setFecha(12, 3, 2024);
+
+		Valoracion v9 = new Valoracion(9, this.getContenidoSistema(0), this.getUsuarioSistema(6), 4, 3780, fecha);
+		this.insertarValoracion(v9);
+
+		fecha.setFecha(4, 4, 2021);
+
+		Valoracion v10 = new Valoracion(10, this.getContenidoSistema(5), this.getUsuarioSistema(7), 4, 3000, fecha);
+		this.insertarValoracion(v10);
+
+		fecha.setFecha(21, 11, 2023);
+
+		Valoracion v11 = new Valoracion(11, this.getContenidoSistema(5), this.getUsuarioSistema(8), 5, 2341, fecha);
+		this.insertarValoracion(v11);
+
+		fecha.setFecha(8, 2, 2021);
+
+		Valoracion v12 = new Valoracion(12, this.getContenidoSistema(1), this.getUsuarioSistema(8), 4.1, 334, fecha);
+		this.insertarValoracion(v12);
+
+		fecha.setFecha(23, 03, 2018);
+
+		Valoracion v13 = new Valoracion(13, this.getContenidoSistema(9), this.getUsuarioSistema(8), 4.3, 3600, fecha);
+		this.insertarValoracion(v13);
+
+		fecha.setFecha(1, 6, 2023);
+
+		Valoracion v14 = new Valoracion(14, this.getContenidoSistema(9), this.getUsuarioSistema(9), 4.5, 3600, fecha);
+		this.insertarValoracion(v14);
+
+		fecha.setFecha(11, 2, 2024);
+
+		Valoracion v15 = new Valoracion(15, this.getContenidoSistema(7), this.getUsuarioSistema(9), 4.2, 11600, fecha);
+		this.insertarValoracion(v15);
+
+		fecha.setFecha(11, 4, 2023);
+
+		Valoracion v16 = new Valoracion(16, this.getContenidoSistema(2), this.getUsuarioSistema(9), 3.8, 8600, fecha);
+		this.insertarValoracion(v16);
+
+		fecha.setFecha(03, 11, 2023);
+
+		Valoracion v17 = new Valoracion(17, this.getContenidoSistema(4), this.getUsuarioSistema(10), 4.45, 7800, fecha);
+		this.insertarValoracion(v17);
+
+		fecha.setFecha(1, 6, 2023);
+
+		Valoracion v18 = new Valoracion(18, this.getContenidoSistema(9), this.getUsuarioSistema(11), 5, 3600, fecha);
+		this.insertarValoracion(v18);
+
+		Valoracion v19 = new Valoracion(19, this.getContenidoSistema(0), this.getUsuarioSistema(12), 4.5, 3780, fecha);
+		this.insertarValoracion(v19);
+
+		Valoracion v20 = new Valoracion(20, this.getContenidoSistema(5), this.getUsuarioSistema(13), 4.8, 2001, fecha);
+		this.insertarValoracion(v20);
+
+		Valoracion v21 = new Valoracion(21, this.getContenidoSistema(1), this.getUsuarioSistema(14), 3, 334, fecha);
+		this.insertarValoracion(v21);
+
+		this.setTotalLikes(16);
+		this.setTotalUnlikes(12);
+		this.setTotalPlayed(22);
+		this.setUsuarioLogeado(this.getUsuarioSistema(1));
 	
     }
     private void login(){
